@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ai-tools-blog-flax.vercel.app/sitemap.xml
