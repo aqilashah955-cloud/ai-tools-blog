@@ -70,6 +70,8 @@ function buildPage(meta, bodyHtml, readingMins) {
     '<link rel="stylesheet" href="/assets/style.css">', 'stylesheet link');
   page = mustReplace(page, '<script src="assets/app.js" defer></script>',
     '<script src="/assets/app.js" defer></script>', 'app.js script');
+  page = mustReplace(page, '<script src="assets/firebase-forms.js" defer></script>',
+    '<script src="/assets/firebase-forms.js" defer></script>', 'firebase-forms.js script');
   page = mustReplace(page, 'href="index.html"', 'href="/"', 'home links');
   page = mustReplace(page, 'href="blog.html"', 'href="/blog.html"', 'blog links');
   page = mustReplace(page, 'href="about.html"', 'href="/about.html"', 'about links');

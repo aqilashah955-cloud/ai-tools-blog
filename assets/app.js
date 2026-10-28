@@ -181,39 +181,6 @@ function cardHtml(a) {
 
 /* ---------- page wiring (DOM) ---------- */
 
-function initNewsletterForms() {
-  document.querySelectorAll('form.newsletter').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var status = form.querySelector('.form-status');
-      if (status) {
-        status.hidden = false;
-        status.textContent = 'Thanks for signing up! Newsletter delivery is not connected yet, so your address was not saved. Once email is set up, this form will store subscribers.';
-      }
-      form.reset();
-    });
-  });
-}
-
-function initContactForm() {
-  var form = document.querySelector('form.contact-form');
-  if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var name = form.querySelector('#contact-name').value.trim();
-    var email = form.querySelector('#contact-email').value.trim();
-    var message = form.querySelector('#contact-message').value.trim();
-    var subject = encodeURIComponent('Blog contact from ' + (name || 'a reader'));
-    var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
-    window.location.href = 'mailto:aqilashah955@gmail.com?subject=' + subject + '&body=' + body;
-    var status = form.querySelector('.form-status');
-    if (status) {
-      status.hidden = false;
-      status.textContent = 'Your email app should now open with the message ready to send.';
-    }
-  });
-}
-
 function initHome() {
   var featuredEl = document.getElementById('featured-list');
   var latestEl = document.getElementById('latest-list');
@@ -301,8 +268,6 @@ function initArticle() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  initNewsletterForms();
-  initContactForm();
   initHome();
   initBlog();
   initArticle();
