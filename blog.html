@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All tutorials — AI Tools Blog</title>
+<meta name="description" content="Browse all beginner-friendly tutorials on AI tools, AI automation, content writing, and productivity. Search or filter by topic.">
+<meta property="og:title" content="All tutorials — AI Tools Blog">
+<meta property="og:description" content="Browse all beginner-friendly tutorials on AI tools, AI automation, content writing, and productivity.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">AI Tools <span>Blog</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap-narrow">
+    <h1>All tutorials</h1>
+    <p>Every tutorial on the blog, newest first. Search by keyword or filter by topic.</p>
+
+    <div class="controls">
+      <label for="blog-search">Search</label>
+      <input type="search" id="blog-search" name="q" placeholder="Try “voice”, “prompts”, “automation”…">
+    </div>
+    <div class="controls filters" role="group" aria-label="Filter by category">
+      <button type="button" class="filter-btn" data-category="All" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-category="AI Tools" aria-pressed="false">AI Tools</button>
+      <button type="button" class="filter-btn" data-category="AI Automation" aria-pressed="false">AI Automation</button>
+      <button type="button" class="filter-btn" data-category="Content Writing" aria-pressed="false">Content Writing</button>
+      <button type="button" class="filter-btn" data-category="Productivity" aria-pressed="false">Productivity</button>
+    </div>
+
+    <ul class="card-list" id="blog-list">
+      <li class="empty">Loading tutorials…</li>
+    </ul>
+  </div>
+
+  <section class="wrap" aria-labelledby="newsletter-heading">
+    <div class="newsletter-band">
+      <h2 id="newsletter-heading">Get new tutorials by email</h2>
+      <p>One email when a new tutorial is published. No spam, no selling your address.</p>
+      <form class="newsletter" action="#" method="post">
+        <div class="form-row">
+          <label for="newsletter-email-blog">Email address</label>
+          <input type="email" id="newsletter-email-blog" name="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+        <button type="submit">Subscribe</button>
+        <p class="form-status" hidden></p>
+      </form>
+      <p class="form-note">Newsletter delivery is not connected yet — your address is not stored anywhere until email is set up.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 AI Tools Blog</span>
+    <span><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="index.html">Home</a></span>
+  </div>
+</footer>
+</body>
+</html>
