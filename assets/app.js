@@ -131,7 +131,7 @@ function formatDate(iso) {
   return d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
 }
 
-function articleUrl(slug) { return 'articles/' + slug; }
+function articleUrl(slug) { return 'articles/' + slug + '/'; }
 
 /* ---------- data loading ---------- */
 
